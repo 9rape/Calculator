@@ -151,7 +151,7 @@ namespace Calculator
 
         private void equal_Click(object sender, EventArgs e)
         {
-            if (textBox.Text != "0" && Calc != null)
+            if (textBox.Text != "" && Calc != null)
             {
                 num2 = Convert.ToDouble(textBox.Text);
                 textBox.Text = Calc.DoMath(num1, num2) + "";
